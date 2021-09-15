@@ -15,22 +15,20 @@
  */
 package tlc2.monitor.util;
 
-/**
- * Interface for TLCB loggers.
- */
+/** Interface for TLCB loggers. */
 public interface Logger {
-    /**
-     * Logs a raw message to the logger output.
-     *
-     * @param message the message to log
-     */
-    void log(String message);
+  /**
+   * Logs a raw message to the logger output.
+   *
+   * @param message the message to log
+   */
+  void log(String message);
 
-    /**
-     * Logs a formatted message to the logger output.
-     *
-     * @param message the message to log
-     * @param args the format arguments
-     */
-    void log(String message, Object... args);
+  /**
+   * Logs a formatted message to the logger output.
+   *
+   * @param message the message to log
+   * @param args the format arguments
+   */
+  void log(String message, Object... args);
 }

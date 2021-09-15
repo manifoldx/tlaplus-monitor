@@ -18,17 +18,15 @@ package tlc2.monitor.util;
 import tlc2.output.EC;
 import tlc2.output.MP;
 
-/**
- * Logger that uses TLC module output overrides.
- */
+/** Logger that uses TLC module output overrides. */
 public class ModuleLogger implements Logger {
-    @Override
-    public void log(String message) {
-        MP.printMessage(EC.TLC_MODULE_OVERRIDE_STDOUT, message);
-    }
+  @Override
+  public void log(String message) {
+    MP.printMessage(EC.TLC_MODULE_OVERRIDE_STDOUT, message);
+  }
 
-    @Override
-    public void log(String message, Object... args) {
-        MP.printMessage(EC.TLC_MODULE_OVERRIDE_STDOUT, String.format(message, args));
-    }
+  @Override
+  public void log(String message, Object... args) {
+    MP.printMessage(EC.TLC_MODULE_OVERRIDE_STDOUT, String.format(message, args));
+  }
 }
