@@ -1,7 +1,8 @@
 .git
 .github/
 docker-compose.yml
-Dockerfile
+# maven needs dockerfile context to build
+!Dockerfile
 target/
 pom.xml.tag
 pom.xml.releaseBackup
